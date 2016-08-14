@@ -1,0 +1,28 @@
+<ion-view view-title="Tengo">
+  <ion-content>
+    <h2>Album {{items[0].nombre}} </h2>
+	 <ion-list>
+	  <ion-item collection-repeat="item in items">
+	    <div class="item item-button-right">
+
+	      {{item.numero}} Repetidas {{item.repetidas}} 
+	      <div class="buttons">
+		      <button class="button button-positive" ng-click="menosRepetidas(item)">
+		      
+		        <i class="icon ion-ios-minus-outline"></i>
+
+		      </button>
+		        > {{item.repetidas}} <  
+		      <button class="button button-positive" ng-click="masRepetidas(item)">
+		      
+		        <i class="icon ion-ios-plus-outline"></i>
+
+		      </button>
+		  </div>    
+	    </div>
+
+	  </ion-item>
+	</ion-list>
+  </ion-content>
+
+</ion-view>

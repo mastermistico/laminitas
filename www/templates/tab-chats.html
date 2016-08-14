@@ -1,0 +1,16 @@
+<ion-view view-title="Faltan">
+  <ion-content>
+  <h2>Album {{items[0].nombre}} </h2>
+    <ion-list>
+  <ion-item collection-repeat="item in items">
+    <div class="item item-button-right">
+       laminita {{item.numero}}
+      <button class="button button-positive" ng-click="tengoItem(item)">La tengo 
+        <i class="icon ion-ios-checkmark-outline"></i>
+
+      </button>
+    </div>  
+  </ion-item>
+</ion-list>
+  </ion-content>
+</ion-view>
